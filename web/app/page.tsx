@@ -32,9 +32,19 @@ export default function Home() {
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(13,12,9,0.93)_0%,rgba(13,12,9,0.78)_42%,rgba(13,12,9,0.18)_100%)]" />
         <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col px-5 py-5 sm:px-8 lg:px-10">
           <header className="flex items-center justify-between gap-4">
-            <div className="flex h-16 w-48 items-center justify-center border border-dashed border-white/55 bg-black/20 px-4 text-xs font-semibold uppercase tracking-[0.2em] text-white/80 backdrop-blur">
-              Paste logo here
-            </div>
+            <a
+              href="#"
+              aria-label="OMADiner home"
+              className="flex h-20 w-20 items-center justify-center transition hover:scale-105"
+            >
+              <Image
+                src="/9_11_nobg.png"
+                alt="OMADiner logo"
+                width={1024}
+                height={1024}
+                className="h-full w-full object-contain drop-shadow-[0_8px_20px_rgba(0,0,0,0.45)]"
+              />
+            </a>
             <nav className="hidden items-center gap-6 text-sm font-medium text-white/80 md:flex">
               <a href="#menu" className="transition hover:text-white">
                 Menu
